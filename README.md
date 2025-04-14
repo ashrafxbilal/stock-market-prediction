@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This research project implements a deep learning approach to predict stock market prices using Long Short-Term Memory (LSTM) neural networks. The model analyzes historical stock data, particularly focusing on Apple Inc. (AAPL) stock, to identify patterns and make predictions about future price movements. Technical indicators and feature engineering techniques are employed to enhance the model's predictive capabilities. The results demonstrate that LSTM networks can effectively capture temporal dependencies in stock price data, providing valuable insights for investment decision-making.
+This project implements a deep learning approach to predict stock market prices using Long Short-Term Memory (LSTM) neural networks. The model analyzes historical stock data, particularly focusing on Apple Inc. (AAPL) stock, to identify patterns and make predictions about future price movements. Technical indicators and feature engineering techniques are employed to enhance the model's predictive capabilities. The results demonstrate that LSTM networks can effectively capture temporal dependencies in stock price data, providing valuable insights for investment decision-making.
 
 ## Introduction
 
@@ -106,9 +106,31 @@ The feature engineering process significantly improved the model's performance, 
     pip install -r requirements.txt
     ```
 
+### Running the Project
+
+1. Data Processing:
+   ```bash
+   python src/data/make_dataset.py
+   ```
+2. Feature Engineering:
+    ```bash
+    python src/features/feature_engineering.py
+    ```
+3. Model Training:
+    ```bash
+    python src/models/lstm_model.py
+    ```
+4. Model Evaluation:
+    ```bash
+    python src/models/model_evaluation.py
+    ```
+5. Visualization:
+    ```bash
+    python src/visualization/visualize.py
+    ```
 
 ## Conclusion
-This research demonstrates the effectiveness of LSTM neural networks for stock market prediction. The model successfully captures temporal patterns in historical stock data and provides reasonably accurate predictions of future price movements. The integration of technical indicators through feature engineering significantly enhances the model's performance.
+This project demonstrates the effectiveness of LSTM neural networks for stock market prediction. The model successfully captures temporal patterns in historical stock data and provides reasonably accurate predictions of future price movements. The integration of technical indicators through feature engineering significantly enhances the model's performance.
 
 Future work could explore:
 
